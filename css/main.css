@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'montserrat', sans-serif;
+    font-size: 0.875rem;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+main {
+    margin: 20px 10px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.5em;
+    max-width: 600px;
+}
+
+
+
+section {
+    padding: 15px;
+}
+
+p {
+    color: hsl(228, 12%, 48%);
+    margin: 10px;
+    line-height: 1.6;
+}
+
+.first-p {
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+}
+
+.price {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+}
+
+span {
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    text-decoration: line-through;
+    margin-left: 10px;
+    font-family: 'montserrat', sans-serif;
+}
+
+.btn {
+   width: 100%;
+   height: 40px;
+   color: hsl(0, 0%, 100%);
+   border: transparent;
+   border-radius: 0.5em;
+   background-color: hsl(158, 36%, 37%);
+   font-family: inherit;
+   transition: 0.3s linear;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+
+.btn:hover {
+    background-color: hsl(158, 51%, 21%);
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+    .img-desk {
+        display: none;
+    }
+    .img-mob {
+        width: 100%;
+        border-radius: 0.5em 0.5em 0 0;
+}
+
+}
+
+@media (min-width: 376px) {
+    .img-mob {
+        display: none;
+    }
+    .img-desk {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.5em 0 0 0.5em;
+    }
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+}
